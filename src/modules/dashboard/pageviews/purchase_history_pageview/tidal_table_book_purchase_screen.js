@@ -39,7 +39,7 @@ const TidalTableBookPurchaseScreen = () => {
 
         var currentEmail = window.localStorage.getItem("currentEmail");
 
-        var url = "http://biwta-db.000webhostapp.com/user/purchase_history/tidal_table_book.php?email=" + currentEmail;
+        var url = "https://biwta-db.000webhostapp.com/user/purchase_history/tidal_table_book.php?email=" + currentEmail;
 
         axios.get(url)
             .then((response) => {

@@ -217,7 +217,7 @@ const TidalDataScreen = () => {
         fd.append('toDate', tidalDataToYear);
         fd.append('purpose', purpose);
 
-        axios.post('http://biwta-db.000webhostapp.com/user/request_tidal_data.php', fd)
+        axios.post('https://biwta-db.000webhostapp.com/user/request_tidal_data.php', fd)
         .then(res=> {
             console.log("Data:" + res.data);
 

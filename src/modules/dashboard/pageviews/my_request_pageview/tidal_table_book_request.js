@@ -44,7 +44,7 @@ const TidalTableBookRequest = () => {
 
         var currentEmail = window.localStorage.getItem("currentEmail");
 
-        var url = "http://biwta-db.000webhostapp.com/user/my_request_tidal_table_book.php?email=" + currentEmail;
+        var url = "https://biwta-db.000webhostapp.com/user/my_request_tidal_table_book.php?email=" + currentEmail;
 
         axios.get(url)
             .then((response) => {
@@ -98,7 +98,7 @@ const ActionComponent = (props) => {
         const fd = new FormData();
         fd.append('id', props.value.id);
         
-        axios.post('http://biwta-db.000webhostapp.com/user/my_request_tidal_table_book_delete.php', fd)
+        axios.post('https://biwta-db.000webhostapp.com/user/my_request_tidal_table_book_delete.php', fd)
         .then(res=> {
             console.log("Data:" + res.data);
         

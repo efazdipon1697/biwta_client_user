@@ -148,7 +148,7 @@ const HydrographicSurveyChartScreen = () => {
             fd.append('period', "Latest");            
         }
         
-        axios.post('http://biwta-db.000webhostapp.com/user/request_hydrographic_survey_data.php', fd)
+        axios.post('https://biwta-db.000webhostapp.com/user/request_hydrographic_survey_data.php', fd)
         .then(res=> {
             console.log("Data:" + res.data);
 

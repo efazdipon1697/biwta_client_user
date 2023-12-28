@@ -74,7 +74,7 @@ class MyInfo extends Component {
 
         var currentEmail = window.localStorage.getItem("currentEmail");
 
-        var url = "http://biwta-db.000webhostapp.com/user/getUserByEmail.php?email=" + currentEmail;
+        var url = "https://biwta-db.000webhostapp.com/user/getUserByEmail.php?email=" + currentEmail;
 
         fetch(url, {
             method: 'GET',

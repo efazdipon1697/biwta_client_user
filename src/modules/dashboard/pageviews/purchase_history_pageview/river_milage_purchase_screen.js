@@ -58,7 +58,7 @@ const RiverMilagePurchaseScreen = () => {
 
         var currentEmail = window.localStorage.getItem("currentEmail");
 
-        var url = "http://biwta-db.000webhostapp.com/user/purchase_history/river_milage.php?email=" + currentEmail;
+        var url = "https://biwta-db.000webhostapp.com/user/purchase_history/river_milage.php?email=" + currentEmail;
 
         axios.get(url)
             .then((response) => {

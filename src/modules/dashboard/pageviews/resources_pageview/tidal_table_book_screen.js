@@ -119,7 +119,7 @@ const TidalTableBookScreen = () => {
         fd.append('year', tidalTableBookYear);
         fd.append('quantity', qty);
 
-        axios.post('http://biwta-db.000webhostapp.com/user/request_tidal_table_book.php', fd)
+        axios.post('https://biwta-db.000webhostapp.com/user/request_tidal_table_book.php', fd)
         .then(res=> {
             console.log("Data:" + res.data);
 

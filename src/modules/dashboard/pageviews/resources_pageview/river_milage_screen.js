@@ -119,7 +119,7 @@ const RiverMilageScreen = () => {
         fd.append('riverMilageYear', riverMilageYear);
         fd.append('riverMilageQty', qty);
 
-        axios.post('http://biwta-db.000webhostapp.com/user/request_river_milage.php', fd)
+        axios.post('https://biwta-db.000webhostapp.com/user/request_river_milage.php', fd)
         .then(res=> {
             console.log("Data:" + res.data);
 

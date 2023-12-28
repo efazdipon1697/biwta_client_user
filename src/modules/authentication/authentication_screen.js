@@ -288,7 +288,7 @@ const SignUpFormHolder = () => {
         fd.append('pass', newUser.pass); 
         fd.append('idType', newUser.idType);
         
-        axios.post('http://biwta-db.000webhostapp.com/user/registration.php', fd)
+        axios.post('https://biwta-db.000webhostapp.com/user/registration.php', fd)
         .then(res=> {
             console.log("Data:" + res.data);
 
@@ -475,7 +475,7 @@ const LoginFormHolder = () => {
         fd.append('email', newUser.email);
         fd.append('pass', newUser.pass); 
         
-        axios.post('http://biwta-db.000webhostapp.com/user/login.php', fd)
+        axios.post('https://biwta-db.000webhostapp.com/user/login.php', fd)
         .then(res=> {
             console.log("Data:" + res.data);
 
@@ -488,7 +488,7 @@ const LoginFormHolder = () => {
                 alert("Login successfully.");
                 window.localStorage.setItem("currentEmail", newUser.email);
                 window.localStorage.setItem("isLoggedIn", true);
-                window.location.href= "/dashboard";
+                window.location.href= "/";
             } else if (res.data === "unverified"){
                 alert("This email is not verified yet. Please go to the link sent to your email for verification. If you do not find the any mail related verification in inbox, please check SPAM folder as well.");
             } else {

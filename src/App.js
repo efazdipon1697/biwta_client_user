@@ -20,7 +20,7 @@ function App() {
         <BrowserRouter>
           <Routes>
           <Route path='/' element={isLoggedIn ? <DashboardScreen /> : <AuthenticationScreen />} />
-          <Route path='/dashboard' element={<DashboardScreen />} />
+          {/* <Route path='/dashboard' element={<DashboardScreen />} /> */}
           <Route path='/authentication' element={<AuthenticationScreen />} />
           </Routes>
         </BrowserRouter>
